@@ -55,13 +55,13 @@ var calculatorModule = (function(){
 
 //stores amount in display to the cash registor
     function saveMemory(){
-      memory = total;
+    register = total;
       return register;
     }
   
  //clears cash register
     function clearMemory(){
-     memory = 0;
+    register = 0;
      return register;
     }
   

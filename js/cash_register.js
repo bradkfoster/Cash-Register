@@ -3,8 +3,7 @@ console.log('helloWorldAgain')
 let calculatorMod = calculatorModule();
 //tracks operation input;
 let operation = null;
-
-let display = ''
+let display = '';
 //holds number value
 let num1 = 0;
 let num2 = 0;
@@ -26,7 +25,8 @@ displayContent.innerHTML = display;
 //data passed in arguement when numbers are pressed. Adds numbers to innerHtml
 let updateContent = (d)=>{
     var newDisplay = document.getElementById('displayBox');
-    newDisplay.innerHTML = newDisplay.innerHTML + d;
+    
+    newDisplay.innerHTML +=  d;
 }
 
 
@@ -37,7 +37,7 @@ function resetDisplay(){
 }
 
 let add = document.getElementById('add').addEventListener('click',()=>{
-    num1 = parseFloat(updateContent.innerHTML);
+    num1 = parseFloat(displayContent.innerHTML);
     operation = '+';
     calculatorMod.load(num1) 
     resetDisplay('');
@@ -45,50 +45,51 @@ let add = document.getElementById('add').addEventListener('click',()=>{
 
 let subtract = document.getElementById('subtract').addEventListener('click',()=>{
     operation = '-';
-    num1 = parseFloat(updateContent.innerHTML);
+    num1 = parseFloat(displayContent.innerHTML);
     calculatorMod.load(num1) 
     resetDisplay('');
 })
 
 let multiply = document.getElementById('multiply').addEventListener('click',()=>{
     operation = '*';
-    num1 = parseFloat(updateContent.innerHTML);
+    num1 = parseFloat(displayContent.innerHTML);
     calculatorMod.load(num1) 
     resetDisplay('');
 })
 
 let divide = document.getElementById('divide').addEventListener('click',()=>{
     operation = '/';
-    num1 = parseFloat(updateContent.innerHTML);
+    num1 = parseFloat(displayContent.innerHTML);
     calculatorMod.load(num1) 
     resetDisplay('');
 })
 
-// let clear = document.getElementById('clear').addEventListener('click',()=>{
-//     operation = null,
-//     loadNum = null,
-//     num2 = null,
-//     resetDisplay('')
-// })
+let clear = document.getElementById('clear').addEventListener('click',()=>{
+    operation = null,
+    num1 = null,
+    num2 = null,
+    calculatorMod.clearMemory();
+    resetDisplay('')
+})
 
 let equal = document.getElementById('equals').addEventListener('click',()=>{
-    num2 = parseFloat(updateContent.innerHTML);
+    num2 = parseFloat(displayContent.innerHTML);
 
         switch(operation){
-        case'+':
-        calculatorMod.add(num2);
+        case '+':
+            calculatorMod.add(num2);
         break;
         case '-':
-        calculatorMod.subtract(num2);
-        break;
-        case '/':
-        calculatorMod.divide(num2);
+            calculatorMod.subtract(num2);
         break;
         case '*':
-        calculatorMod.multiply(num2);
+            calculatorMod.multiply(num2);
         break;
-    }
-    startDisplay.innerHTML = calculatorMod.getTotal;
+        case '/':
+            calculatorMod.divide(num2);
+    
+      }
+    displayContent.innerHTML = calculatorMod.getTotal();
 }
 )
 
