@@ -1,3 +1,41 @@
+#main{
+   text-align: center;
+}
+#header{
+    padding-bottom: 75px;
+    padding-top: 100px;
+    text-align: center;
+   
+}
 
+#displayBox{
+    border: solid 2px;
+    background-color: black
+    text-align: center;
+    font-size: 20px;
+    border: 2px;
+    padding-bottom: 20px;
+}
+.numButton{
+    width: 60px;
+    border-radius: 8px;
+    background-color: grey;
+    
+}
+.numButton:hover{
+    opacity: .5;
+}
+.operators{
+    background-color: orange;
+    border-radius: 8px;
 
+}
+.operators:hover{
+    opacity: .5;
+}
+.actions{
 
+}
+#equals{
+    width: 175px;
+}

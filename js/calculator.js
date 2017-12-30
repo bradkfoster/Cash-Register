@@ -54,8 +54,8 @@ var calculatorModule = (function(){
     }
 
 //stores amount in display to the cash registor
-    function saveMemory(){
-    register = total;
+    function saveMemory(x){
+    register += x;
       return register;
     }
   
@@ -63,6 +63,14 @@ var calculatorModule = (function(){
     function clearMemory(){
     register = 0;
      return register;
+    }
+
+    function feedMemory(x){
+      if(x>register){
+        throw new Error("Request Invalid");
+      }else{
+        register -= x;
+      }
     }
   
 //make sure that number is valid.
@@ -82,6 +90,7 @@ var calculatorModule = (function(){
      recallMemory: recallMemory,
      saveMemory: saveMemory,
      clearMemory: clearMemory,
+     feedMemory: feedMemory,
   
   };
   
