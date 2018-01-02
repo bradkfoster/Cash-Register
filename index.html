@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     
     <title>Brad's Register</title>
 </head>
 <body>
       <div id="main">
         <div id="header">
-          <h1>Welcome to myCalculator</h1>
+          <h1>Welcome to myCashRegister</h1>
         </div>
-        <div id="displayBox"></div>
+        <div id="regBox">
+         <div id="displayBox"></div>
         
         
         
@@ -22,41 +24,42 @@
             <button value="8" id="butt8" class="numButton">8</button>
             <button value="9" id="butt9" class="numButton">9</button>
              <button value="/" id="divide" class="operators">/</button>
-          </div>
-          <div id="secondRow">
+           </div>
+           <div id="secondRow">
             <button value="4" id="butt4" class="numButton">4</button>
             <button value="5" id="butt5" class="numButton">5</button>
             <button value="6" id="butt6" class="numButton">6</button>
             <button value="*" id="multiply" class="operators">*</button>
-          </div>
-          <div id="thirdRow">
+           </div>
+           <div id="thirdRow">
             <button value="1" id="butt1" class="numButton">1</button>
             <button value="2" id="butt2" class="numButton">2</button>
             <button value="3" id="butt3" class="numButton">3</button>
             <button value="-" id="subtract" class="operators">-</button>
-          </div>
-          <div id="fourthRow">
+            </div>
+           <div id="fourthRow">
             <button value="0" id="butt0" class="numButton">0</button>
             <button value="00" id="butt00" class="numButton">00</button>
             <button value="." id="decimal" class="numButton">.</button>
             <button value="+" id="add" class="operators">+</button>
-            </div>
-            <div id="firthRow">
+          </div>
+          <div id="firthRow">
             <button id="equals" class="">=</button>
-            <button id="clear" class="actions">clear</button>
-            </div>
+            <button id="clear" class="actions">AC</button>
+           </div>
     
-            <div id="sixthRow">
-          <button id="balance" class="actions">Balance</button>
-          <button id="deposit" class="actions">Deposit</button>
+          <div id="sixthRow">
+            <button id="balance" class="actions">Balance</button>
+            <button id="deposit" class="actions">Deposit</button>
           <button id="withdraw" class="actions">Withdraw</button>
-          
-        </div> 
-        
+              
+          </div> 
+         
           
           </div>
           </div>
         </div>
+        
       </div> 
     <script src="js/calculator.js"></script>
     <script src="js/cash_register.js"></script>

@@ -13,7 +13,7 @@ let num2 = 0;
 var allTheButtons = document.getElementsByClassName('numButton');
 for(var i = 0; i < allTheButtons.length ;i++){
    allTheButtons[i].addEventListener('click', function(){
-    var bottomBox = document.getElementById('lowDisplayBox');  
+    
     updateContent(this.value);
  },true)
 }

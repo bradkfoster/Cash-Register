@@ -5,22 +5,42 @@
     padding-bottom: 75px;
     padding-top: 100px;
     text-align: center;
-   
+    background-image: url("https://igrari.files.wordpress.com/2013/04/abstract-minimalistic-vector-graffiti-circuit-brain-electronics-creative-logic-hemispheres-electroni_www-wall321-com_181.jpg");
+   border-radius: 20px;
+   opacity: .5;
+   font-family: 'Cinzel', serif;
+   font-size: 50px;
+
+}
+#regBox{
+    background-color:#ffae7d;
+   height: 750px;
+   border-radius: 30px;
+   -
+  
 }
 
 #displayBox{
-    border: solid 2px;
-    background-color: black
+    border: 2px solid black;
+    margin: auto;
+    background-color: black;
+    color: white;
+    height:  30px;
+    width: 310px;
     text-align: center;
     font-size: 20px;
-    border: 2px;
     padding-bottom: 20px;
+    -moz-box-shadow:    inset 0 0 10px grey;
+   -webkit-box-shadow: inset 0 0 10px grey;
+   box-shadow:         inset 0 0 10px grey;
 }
 .numButton{
-    width: 60px;
+    width: 75px;
     border-radius: 8px;
     background-color: grey;
-    
+    height: 60px;
+    font-size: 25px;
+
 }
 .numButton:hover{
     opacity: .5;
@@ -28,14 +48,46 @@
 .operators{
     background-color: orange;
     border-radius: 8px;
+    height: 60px;
+    width: 75px;
+    font-size: 25px;
 
 }
 .operators:hover{
     opacity: .5;
 }
 .actions{
+ background-color: orange;
+ border-radius: 8px;
+ height: 60px;
+ width: 100px;
+ font-size: 15px;
+}
+ .actions:hover{
+    opacity: .5;
+}
 
+#equals:hover{
+    opacity: .5;
 }
 #equals{
+   background-color: gray;
     width: 175px;
+    border-radius: 8px;
+    height: 60px;
+    width: 155px;
+    font-size: 25px;
+}
+#equals:hover{
+    opacity: .5;
+}
+#clear{
+    border-radius: 8px;
+    height: 60px;
+    width: 155px;
+    font-size: 25px;
+
+}
+#clear:hover{
+    opacity: .5;
 }
